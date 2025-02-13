@@ -1,1 +1,0 @@
-# tuncerbatuhan.github.io
