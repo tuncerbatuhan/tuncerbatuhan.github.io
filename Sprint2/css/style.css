@@ -1,9 +1,16 @@
+/*
+Batuhan Tuncer 20050111040
+Emirhan Akbas  23050151001
+*/
+
 /* general structer*/
+  /* Reset default margin and padding for all elements */
   *{
     margin:0;
     padding: 0;
   }
  
+   /* Set the HTML and body to take full height and use flexbox for layout */
   html, body {
     height: 100%;
     display: flex;
@@ -12,58 +19,66 @@
     color: #333;
   }
 
+  /* Main content area styles */
   main {
-    flex: auto; 
-    display: flex; /* Flex düzeni aktif */
-    flex-direction: column; /*alt alta yazar*/
-    align-items: center; /* Dikeyde ortalar */
-    gap: 40px;
+    flex: auto; /* Allows main to expand to fill available space */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 40px;/* Adds space between elements */
     padding-top: 40px;
   }
 
 
   
   /* NAVBAR */
+    /* Logo styling */
     #logo{
       width: 18%;
       height: auto;
       margin-left: 20px;
     }
 
+/* Navbar container styling */
     .navbar {
       width:100%;
       background: linear-gradient(to right, rgb(10, 6, 26), rgb(14, 18, 131));
-      display: flex; /*flexible*/
-      flex-direction: row; /*satırda yanyana diz*/
-      justify-content: space-between; /*arasındaki boşluk (başlarda boşluk yok arasında eşit boşluk)*/
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; /* Aligns items at the ends */
       align-items: center;
     }
 
+    /* Navigation menu list styling */
    .navbar ul{
-    list-style-type: none; /*noktayı kaldır listedeki*/
-    display: flex;   /*flexible*/
-    flex-direction: row; /*satırda sırala*/
-    align-items: center; /*satırın ortasında hizzalar*/
-    margin-right: 120px; /*sağdan boşluk bırakır*/
+    list-style-type: none; /* Removes bullet points */
+    display: flex;   
+    flex-direction: row; 
+    align-items: center; 
+    margin-right: 120px; 
   }
 
+  /* Navigation menu list items */
   .navbar li{
     padding: 20px;
   }
 
+  /* Navigation menu links */
   .navbar a{
-    font-size: larger; /*kalınlaştır*/
+    font-size: larger; 
     color: whitesmoke;
     display: inline-block;
     padding: 12px;
     border-radius: 5px;
   }
 
+  /* Hover effect on navbar links */
   .navbar a:hover{
     border-bottom: 2px solid  rgb(1, 85, 219);
   
     }
 
+    /* Active menu items */
     #home, #game, #level, #profile, #support,#login, #register{
       border-bottom: 2px solid  rgb(1, 85, 219);
     }
@@ -71,10 +86,11 @@
  
 
   /*FOOTER*/
+  /* Footer styling */
   footer {
     background-color:rgb(12, 12, 76);
     color: whitesmoke;
-    text-align: center; /*yatayda ortalar*/
+    text-align: center; 
     padding: 15px 0;
     width: 100%;
     position: relative;
@@ -82,6 +98,7 @@
   }
 
 /*GAME PAGE*/
+/* Code editor box styling */
 #code-editor{
   width: 600px;
   height: 300px;
@@ -94,18 +111,21 @@
 
   /*SUPPORT PAGE*/
 
-  /* Form Styling */
+  /* Form container heading */
   .form-container h2 {
     text-align: center;
   }
+  /* Form structure and spacing */
   .form-container form div {
     margin-bottom: 15px;
   }
+  /* Label styling */
   .form-container label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
   }
+  /* Input and textarea styling */
   .form-container input,
   .form-container textarea {
     width: 100%;
@@ -114,7 +134,7 @@
     border-radius: 5px;
     box-sizing: border-box;
   }
-  
+  /* Submit button styling */
   .form-container button {
     
     width: 100%;
@@ -125,7 +145,7 @@
     border-radius: 9px;
     cursor: pointer;
   }
-
+ /* Hover effect on buttons */
 button:hover {
     border-bottom:  3px solid rgb(12, 12, 76);
   }
@@ -139,17 +159,18 @@ button:hover {
     justify-content: center;
     padding: 20px;
   }
+  /* Gallery item styling */
   .gallery-item {
     width: 200px;
     cursor: pointer;
     transition: 0.3s ease;  
     border-radius: 9px;
   }
-
+/* Click effect for gallery items */
   .gallery-item:active {
   width: 300px;
   }
-  
+  /* Image inside gallery items */
   .gallery-item img {   
     width: 100%;
     height: auto;
@@ -160,6 +181,7 @@ button:hover {
   
 
   /*OTHERS*/
+  /* General link styling */
   a{
     text-decoration: none;
     font-weight: bold;
@@ -167,6 +189,7 @@ button:hover {
     color: black;
   }
 
+  /* General button styling */
   button{
     
   background-color: rgb(234, 236, 240);
@@ -179,7 +202,7 @@ button:hover {
   cursor: pointer;
   }
   
-  
+  /* Logout link is hidden by default */
   #logout-link{
     display: none;
   }
