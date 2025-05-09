@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Saga - Level Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <img id="logo" src="./images/Logo (2).png" alt="Logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="level.html" id="level">Levels</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="register.html" id="register-link">Sign Up</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<main>
+    <h2>Level Selection</h2>
+    <p>Select a level to start your adventure:</p>
+
+    <!-- Normal Levels -->
+    <div class="levels">
+        <div class="level-card">
+            <h3>Level 1: Beginner</h3>
+            <p>This level introduces the basics of JavaScript.</p>
+            <a href="game.html?level=1"><button>Start Level 1</button></a>
+        </div>
+        <div class="level-card">
+            <h3>Level 2: Intermediate</h3>
+            <p>Challenge yourself with intermediate coding tasks.</p>
+            <a href="game.html?level=2"><button>Start Level 2</button></a>
+        </div>
+        <div class="level-card">
+            <h3>Level 3: Advanced</h3>
+            <p>Test your skills with advanced programming challenges.</p>
+            <a href="game.html?level=3"><button>Start Level 3</button></a>
+        </div>
+    </div>
+
+    <!-- Dynamic Levels from JSON -->
+    <section>
+        <h3>Bonus Challenges:</h3>
+        <div class="levels" id="levels-container"></div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 JS-Saga. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

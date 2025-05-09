@@ -1,0 +1,5 @@
+[
+  { "id": 4, "name": "Speed Run", "description": "Complete as many tasks as possible within the time limit." },
+  { "id": 5, "name": "Debugging Master", "description": "Find and fix bugs in complex code snippets." },
+  { "id": 6, "name": "Algorithm Expert", "description": "Solve challenging algorithmic puzzles efficiently." }
+]
